@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>扫码添加微信</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #666;
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    .qrcode {
+      width: 240px;
+      height: 240px;
+      border: 8px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      border-radius: 8px;
+    }
+    .footer {
+      margin-top: 30px;
+      color: #999;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>长按识别二维码</h1>
+    <p>或截图保存后在微信中扫码</p>
+    <img class="qrcode" src="your-wechat-qrcode.png" alt="微信二维码" />
+    <div class="footer">如无法识别，请截图保存后在微信中扫码</div>
+  </div>
+</body>
+</html>
